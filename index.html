@@ -2,14 +2,46 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>超シンプルなモールス信号表</title>
+  <title>雜・す繝ｳ繝励Ν縺ｪ繝｢繝ｼ繝ｫ繧ｹ菫｡蜿ｷ陦ｨ</title>
+  <style>
+    body {
+      font-family: "Yu Gothic", "游ゴシック", sans-serif;
+      padding: 16px;
+    }
+    .tables {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .table-block {
+      flex: 1;
+      min-width: 240px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th,
+    td {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
-  <h1>モールス信号表（国際式）</h1>
+  <h1>繝｢繝ｼ繝ｫ繧ｹ菫｡蜿ｷ陦ｨ・亥嵜髫帛ｼ擾ｼ・</h1>
 
-  <h2>アルファベット</h2>
+  <div class="tables">
+    <section class="table-block">
+  <h2>繧｢繝ｫ繝輔ぃ繝吶ャ繝・</h2>
   <table border="1" cellpadding="4">
-    <tr><th>文字</th><th>モールス信号</th></tr>
+    <tr><th>譁・ｭ・</th><th>繝｢繝ｼ繝ｫ繧ｹ菫｡蜿ｷ</th></tr>
     <tr><td>A</td><td>.-</td></tr>
     <tr><td>B</td><td>-...</td></tr>
     <tr><td>C</td><td>-.-.</td></tr>
@@ -37,10 +69,12 @@
     <tr><td>Y</td><td>-.--</td></tr>
     <tr><td>Z</td><td>--..</td></tr>
   </table>
+    </section>
 
-  <h2>数字</h2>
+    <section class="table-block">
+  <h2>謨ｰ蟄・</h2>
   <table border="1" cellpadding="4">
-    <tr><th>数字</th><th>モールス信号</th></tr>
+    <tr><th>謨ｰ蟄・</th><th>繝｢繝ｼ繝ｫ繧ｹ菫｡蜿ｷ</th></tr>
     <tr><td>0</td><td>-----</td></tr>
     <tr><td>1</td><td>.----</td></tr>
     <tr><td>2</td><td>..---</td></tr>
@@ -52,5 +86,7 @@
     <tr><td>8</td><td>---..</td></tr>
     <tr><td>9</td><td>----.</td></tr>
   </table>
+    </section>
+  </div>
 </body>
 </html>
